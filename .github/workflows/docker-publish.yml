@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and push the image
         run: |
-          docker login --username priyanshu2901 --password ${{ secrets.PAT }}
+          docker login --username priyanshu2901 --password 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
           docker build . --tag ghcr.io/priyanshu2901/node-example:latest
           docker push ghcr.io/priyanshu2901/node-example:latest
           
